@@ -80,7 +80,7 @@ class BookController extends Controller
             ])->withAvgrating()->withReviewsCount()->findOrFail($id)
         );
 
-        return view('books.show', ['book' => $book]);
+        return view('books.reviews.show', ['book' => $book]);
     }
 
     /**
